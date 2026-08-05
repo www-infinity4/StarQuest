@@ -1,0 +1,262 @@
+{
+  "schemaVersion": "1.0.0",
+  "updated": "2026-08-05",
+  "profiles": {
+    "592450": {
+      "mlbId": 592450,
+      "slug": "aaron-judge",
+      "summary": "Aaron Judge developed from a multi-sport high school athlete in Linden, California, into a Fresno State standout, a first-round Yankees selection, and one of the defining power hitters of his era.",
+      "education": [
+        {
+          "institution": "Linden High School",
+          "location": "Linden, California",
+          "level": "High school",
+          "years": "Graduated 2010",
+          "details": "Played baseball, football, and basketball before choosing college baseball.",
+          "sourceId": "judge-mlb-bio"
+        },
+        {
+          "institution": "California State University, Fresno (Fresno State)",
+          "location": "Fresno, California",
+          "level": "College",
+          "years": "2011–2013",
+          "details": "Played three baseball seasons and earned repeated all-conference recognition before entering professional baseball.",
+          "sourceId": "judge-mlb-bio"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "1992-04-26",
+          "label": "Born",
+          "details": "Born in Linden, California.",
+          "category": "life",
+          "sourceId": "judge-mlb-bio"
+        },
+        {
+          "date": "2010",
+          "label": "Completed high school",
+          "details": "Graduated from Linden High School after competing in three sports.",
+          "category": "education",
+          "sourceId": "judge-mlb-bio"
+        },
+        {
+          "date": "2011",
+          "label": "Began Fresno State career",
+          "details": "Started a three-season college career with the Bulldogs.",
+          "category": "education",
+          "sourceId": "judge-mlb-bio"
+        },
+        {
+          "date": "2013",
+          "label": "Drafted by New York Yankees",
+          "details": "Selected in the first round with the 32nd overall pick.",
+          "category": "career",
+          "sourceId": "judge-mlb-bio"
+        },
+        {
+          "date": "2016-08-13",
+          "label": "Major League debut",
+          "details": "Debuted for the New York Yankees.",
+          "category": "career",
+          "sourceId": "judge-mlb-bio"
+        },
+        {
+          "date": "2023-11",
+          "label": "Fresno State jersey retired",
+          "details": "Fresno State retired Judge's No. 29 jersey.",
+          "category": "recognition",
+          "sourceId": "judge-fresno-retirement"
+        }
+      ],
+      "sources": [
+        {
+          "id": "judge-mlb-bio",
+          "title": "Aaron Judge player page and biography",
+          "publisher": "MLB / New York Yankees",
+          "url": "https://www.mlb.com/player/aaron-judge-592450",
+          "type": "official"
+        },
+        {
+          "id": "judge-fresno-retirement",
+          "title": "Aaron Judge's number retired by Fresno State",
+          "publisher": "MLB / New York Yankees",
+          "url": "https://www.mlb.com/yankees/news/aaron-judge-number-retired-by-fresno-state",
+          "type": "official"
+        }
+      ]
+    },
+    "660271": {
+      "mlbId": 660271,
+      "slug": "shohei-ohtani",
+      "summary": "Shohei Ohtani emerged from Iwate Prefecture and Hanamaki Higashi High School, became a professional two-way star in Japan, and then continued as both a hitter and pitcher in Major League Baseball.",
+      "education": [
+        {
+          "institution": "Hanamaki Higashi High School",
+          "location": "Hanamaki, Iwate Prefecture, Japan",
+          "level": "High school",
+          "years": "Through 2012",
+          "details": "Played in major Japanese national high school tournaments before entering professional baseball.",
+          "sourceId": "ohtani-mlb-bio"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "1994-07-05",
+          "label": "Born",
+          "details": "Born in Oshu, Iwate Prefecture, Japan.",
+          "category": "life",
+          "sourceId": "ohtani-mlb-bio"
+        },
+        {
+          "date": "2011",
+          "label": "National high school tournament",
+          "details": "Participated in Japan's National High School Baseball Championship with Hanamaki Higashi.",
+          "category": "education",
+          "sourceId": "ohtani-mlb-bio"
+        },
+        {
+          "date": "2012",
+          "label": "Completed high school baseball path",
+          "details": "Participated in the National High School Baseball Invitational Tournament and entered professional baseball in Japan.",
+          "category": "education",
+          "sourceId": "ohtani-mlb-bio"
+        },
+        {
+          "date": "2013",
+          "label": "Professional debut in Japan",
+          "details": "Began his professional career with the Hokkaido Nippon-Ham Fighters.",
+          "category": "career",
+          "sourceId": "ohtani-media-guide"
+        },
+        {
+          "date": "2017-12-09",
+          "label": "Signed with Los Angeles Angels",
+          "details": "Signed as an international free agent to begin his Major League career.",
+          "category": "career",
+          "sourceId": "ohtani-media-guide"
+        },
+        {
+          "date": "2018-03-29",
+          "label": "Major League debut",
+          "details": "Made his MLB debut as a two-way player.",
+          "category": "career",
+          "sourceId": "ohtani-mlb-bio"
+        }
+      ],
+      "sources": [
+        {
+          "id": "ohtani-mlb-bio",
+          "title": "Shohei Ohtani player page and biography",
+          "publisher": "MLB / Los Angeles Dodgers",
+          "url": "https://www.mlb.com/player/shohei-ohtani-660271",
+          "type": "official"
+        },
+        {
+          "id": "ohtani-media-guide",
+          "title": "2018 Los Angeles Angels Media Guide",
+          "publisher": "Los Angeles Angels",
+          "url": "https://pressbox.athletics.com/home%20directory/Publications/MLB%20Media%20Guides/Archives/2018%20Media%20Guides/2018_LAA_Media_Guide.pdf",
+          "type": "official"
+        }
+      ]
+    },
+    "694973": {
+      "mlbId": 694973,
+      "slug": "paul-skenes",
+      "summary": "Paul Skenes moved from El Toro High School to the U.S. Air Force Academy and LSU, developing as a two-way college player before becoming an elite pitcher and the first overall selection in the 2023 MLB Draft.",
+      "education": [
+        {
+          "institution": "El Toro High School",
+          "location": "Lake Forest, California",
+          "level": "High school",
+          "years": "Graduated 2020",
+          "details": "Three-year letterwinner, team captain, and high-achieving student.",
+          "sourceId": "skenes-lsu-bio"
+        },
+        {
+          "institution": "United States Air Force Academy",
+          "location": "Colorado Springs, Colorado",
+          "level": "College",
+          "years": "2021–2022",
+          "details": "Completed two years as a cadet and excelled as a two-way baseball player before transferring.",
+          "sourceId": "skenes-lsu-bio"
+        },
+        {
+          "institution": "Louisiana State University",
+          "location": "Baton Rouge, Louisiana",
+          "level": "College",
+          "years": "2022–2023",
+          "details": "Majored in interdisciplinary studies and helped LSU win the 2023 College World Series.",
+          "sourceId": "skenes-lsu-bio"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2002-05-29",
+          "label": "Born",
+          "details": "Born in Fullerton, California.",
+          "category": "life",
+          "sourceId": "skenes-lsu-bio"
+        },
+        {
+          "date": "2020",
+          "label": "Graduated from El Toro High School",
+          "details": "Completed high school after serving as a baseball team captain.",
+          "category": "education",
+          "sourceId": "skenes-lsu-bio"
+        },
+        {
+          "date": "2021",
+          "label": "Entered Air Force Academy",
+          "details": "Began a two-year Air Force baseball and cadet-development experience.",
+          "category": "education",
+          "sourceId": "skenes-lsu-story"
+        },
+        {
+          "date": "2022",
+          "label": "Transferred to LSU",
+          "details": "Transferred after two seasons at the Air Force Academy.",
+          "category": "education",
+          "sourceId": "skenes-lsu-bio"
+        },
+        {
+          "date": "2023",
+          "label": "National championship and first overall pick",
+          "details": "Won the College World Series with LSU and was selected first overall by Pittsburgh.",
+          "category": "career",
+          "sourceId": "skenes-lsu-bio"
+        },
+        {
+          "date": "2024-05-11",
+          "label": "Major League debut",
+          "details": "Made his MLB debut for the Pittsburgh Pirates.",
+          "category": "career",
+          "sourceId": "skenes-mlb-bio"
+        }
+      ],
+      "sources": [
+        {
+          "id": "skenes-lsu-bio",
+          "title": "Paul Skenes LSU player biography",
+          "publisher": "LSU Athletics",
+          "url": "https://lsusports.net/sports/bsb/roster/season/2023/player/paul-skenes/",
+          "type": "official"
+        },
+        {
+          "id": "skenes-lsu-story",
+          "title": "The Legend of Paul Skenes",
+          "publisher": "LSU Athletics",
+          "url": "https://lsusports.net/news/2023/05/05/the-legend-of-paul-skenes/",
+          "type": "official"
+        },
+        {
+          "id": "skenes-mlb-bio",
+          "title": "Paul Skenes player page and biography",
+          "publisher": "MLB / Pittsburgh Pirates",
+          "url": "https://www.mlb.com/player/paul-skenes-694973",
+          "type": "official"
+        }
+      ]
+    }
+  }
+}
