@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MLB Watch is an independent StarQuest baseball research platform combining sourced life histories, education, career timelines, and current statistics.">
+  <title>MLB Watch — StarQuest Baseball Intelligence</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="MLB Watch home">
+        <span class="brand-mark" aria-hidden="true">
+          <span class="ball-seam seam-a"></span>
+          <span class="ball-seam seam-b"></span>
+        </span>
+        <span class="brand-copy">
+          <strong>MLB Watch</strong>
+          <small>StarQuest Baseball Intelligence</small>
+        </span>
+      </a>
+
+      <button id="menuButton" class="menu-button" type="button" aria-expanded="false" aria-controls="primaryNav">
+        Menu
+      </button>
+
+      <nav id="primaryNav" class="primary-nav" aria-label="Primary navigation">
+        <a href="#players">Players</a>
+        <a href="#research-method">Research method</a>
+        <a href="#coverage">Coverage</a>
+        <a href="#profile">Player dossier</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="top" class="hero">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Independent baseball research · powered by StarQuest</p>
+          <h1>The whole player.<br><span>Not only the box score.</span></h1>
+          <p class="hero-lead">
+            MLB Watch connects a player’s beginnings, family and hometown context, education, amateur development,
+            draft or international signing, professional movement, awards, injuries, milestones, and live career statistics.
+            Every researched fact stays connected to its source.
+          </p>
+
+          <form id="playerSearch" class="player-search" role="search">
+            <label for="playerSearchInput">Search a current or historical player</label>
+            <div class="search-row">
+              <input id="playerSearchInput" name="player" type="search" autocomplete="off" placeholder="Try Aaron Judge, Shohei Ohtani, Paul Skenes…">
+              <button type="submit">Build dossier</button>
+            </div>
+            <p id="searchStatus" class="search-status" aria-live="polite">
+              Live identity and statistics come from MLB data. Life history appears only when sourced research is available.
+            </p>
+            <div id="searchResults" class="search-results" hidden></div>
+          </form>
+        </div>
+
+        <aside class="hero-visual" aria-label="MLB Watch research layers">
+          <div class="field-grid" aria-hidden="true"></div>
+          <div class="research-core">
+            <span>MLB Watch</span>
+            <strong>Player 360°</strong>
+            <small>Identity · Life · Education · Career · Stats · Sources</small>
+          </div>
+          <div class="orbit-card orbit-life"><b>01</b><span>Early life</span></div>
+          <div class="orbit-card orbit-school"><b>02</b><span>Education</span></div>
+          <div class="orbit-card orbit-career"><b>03</b><span>Career trail</span></div>
+          <div class="orbit-card orbit-stats"><b>04</b><span>Live stats</span></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="signal-strip" aria-label="MLB Watch principles">
+      <div class="signal-grid">
+        <article>
+          <strong>Sourced, not guessed</strong>
+          <span>Unknown details remain marked as research gaps.</span>
+        </article>
+        <article>
+          <strong>Current and historical</strong>
+          <span>Live statistics connect to full-life timelines.</span>
+        </article>
+        <article>
+          <strong>Context matters</strong>
+          <span>Education, development, teams, eras, and opportunities are shown together.</span>
+        </article>
+        <article>
+          <strong>Respectful research</strong>
+          <span>Public-interest facts only; no private addresses or invasive personal data.</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="players" class="section-shell">
+      <div class="section-heading">
+        <p class="eyebrow">Start with a complete profile</p>
+        <h2>Featured research dossiers</h2>
+        <p>
+          These three players demonstrate different development paths: American high school and college baseball,
+          Japanese high school and professional baseball, and a high school-to-military-academy-to-LSU route.
+        </p>
+      </div>
+
+      <div class="featured-grid">
+        <button class="featured-player" type="button" data-player-id="592450">
+          <span class="player-number">99</span>
+          <span class="player-copy">
+            <small>Outfielder · United States</small>
+            <strong>Aaron Judge</strong>
+            <span>Linden High School → Fresno State → Yankees</span>
+          </span>
+          <span class="open-arrow" aria-hidden="true">↗</span>
+        </button>
+
+        <button class="featured-player" type="button" data-player-id="660271">
+          <span class="player-number">17</span>
+          <span class="player-copy">
+            <small>Two-way player · Japan</small>
+            <strong>Shohei Ohtani</strong>
+            <span>Hanamaki Higashi → NPB → Major League Baseball</span>
+          </span>
+          <span class="open-arrow" aria-hidden="true">↗</span>
+        </button>
+
+        <button class="featured-player" type="button" data-player-id="694973">
+          <span class="player-number">30</span>
+          <span class="player-copy">
+            <small>Pitcher · United States</small>
+            <strong>Paul Skenes</strong>
+            <span>El Toro → Air Force → LSU → Pirates</span>
+          </span>
+          <span class="open-arrow" aria-hidden="true">↗</span>
+        </button>
+      </div>
+    </section>
+
+    <section id="profile" class="dossier-shell" aria-labelledby="dossierTitle">
+      <div class="dossier-topbar">
+        <div>
+          <p class="eyebrow">Interactive player dossier</p>
+          <h2 id="dossierTitle">Select a player to begin</h2>
+        </div>
+        <div class="live-state">
+          <span class="live-dot" aria-hidden="true"></span>
+          <span id="dataState">Waiting for player</span>
+        </div>
+      </div>
+
+      <div id="dossierEmpty" class="dossier-empty">
+        <div class="empty-mark" aria-hidden="true">MW</div>
+        <h3>A complete baseball record starts with one name.</h3>
+        <p>Choose a featured player or search above. MLB Watch will assemble verified identity, sourced research, career statistics, and evidence links.</p>
+      </div>
+
+      <div id="dossierApp" class="dossier-app" hidden>
+        <section class="identity-panel">
+          <div class="identity-monogram" id="identityMonogram" aria-hidden="true">--</div>
+          <div class="identity-copy">
+            <div class="identity-kicker">
+              <span id="identityPosition">Position</span>
+              <span id="identityStatus" class="status-pill">Status</span>
+            </div>
+            <h3 id="identityName">Player name</h3>
+            <p id="identitySummary">Research summary</p>
+            <div class="identity-meta">
+              <span><b>Born</b><em id="identityBorn">—</em></span>
+              <span><b>Debut</b><em id="identityDebut">—</em></span>
+              <span><b>Bats / Throws</b><em id="identityBatsThrows">—</em></span>
+              <span><b>Height / Weight</b><em id="identitySize">—</em></span>
+            </div>
+          </div>
+        </section>
+
+        <div class="dossier-tabs" role="tablist" aria-label="Player dossier sections">
+          <button class="dossier-tab active" type="button" role="tab" aria-selected="true" data-tab="overview">Overview</button>
+          <button class="dossier-tab" type="button" role="tab" aria-selected="false" data-tab="life">Life & education</button>
+          <button class="dossier-tab" type="button" role="tab" aria-selected="false" data-tab="career">Career timeline</button>
+          <button class="dossier-tab" type="button" role="tab" aria-selected="false" data-tab="stats">Statistics</button>
+          <button class="dossier-tab" type="button" role="tab" aria-selected="false" data-tab="sources">Sources</button>
+        </div>
+
+        <section class="tab-panel active" data-panel="overview">
+          <div class="overview-grid">
+            <article class="metric-card">
+              <small>Research coverage</small>
+              <strong id="coverageScore">0%</strong>
+              <span id="coverageLabel">Loading sources</span>
+              <div class="coverage-meter"><i id="coverageMeter"></i></div>
+            </article>
+            <article class="metric-card">
+              <small>Education records</small>
+              <strong id="educationCount">0</strong>
+              <span>Verified institutions</span>
+            </article>
+            <article class="metric-card">
+              <small>Timeline events</small>
+              <strong id="timelineCount">0</strong>
+              <span>Sourced milestones</span>
+            </article>
+            <article class="metric-card">
+              <small>Evidence links</small>
+              <strong id="sourceCount">0</strong>
+              <span>Open original sources</span>
+            </article>
+          </div>
+
+          <div class="overview-columns">
+            <article class="content-card">
+              <div class="card-heading">
+                <div>
+                  <small>Current season</small>
+                  <h4>At-a-glance performance</h4>
+                </div>
+                <span id="seasonBadge" class="season-badge">2026</span>
+              </div>
+              <div id="currentStats" class="stat-grid">
+                <p class="loading-copy">Loading official statistics…</p>
+              </div>
+            </article>
+
+            <article class="content-card">
+              <div class="card-heading">
+                <div>
+                  <small>Research status</small>
+                  <h4>What is known</h4>
+                </div>
+              </div>
+              <div id="researchStatus" class="research-status-list"></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="tab-panel" data-panel="life" hidden>
+          <div class="panel-heading">
+            <p class="eyebrow">Before and beyond professional baseball</p>
+            <h3>Life and education record</h3>
+            <p>MLB Watch distinguishes documented facts from missing research. Public records are summarized rather than copied.</p>
+          </div>
+          <div id="educationList" class="education-list"></div>
+          <div id="lifeResearchGap" class="research-gap"></div>
+        </section>
+
+        <section class="tab-panel" data-panel="career" hidden>
+          <div class="panel-heading">
+            <p class="eyebrow">Chronological development</p>
+            <h3>Career and life timeline</h3>
+            <p>Education, amateur baseball, professional movement, milestones, and recognition appear in one dated sequence.</p>
+          </div>
+          <div id="careerTimeline" class="career-timeline"></div>
+        </section>
+
+        <section class="tab-panel" data-panel="stats" hidden>
+          <div class="panel-heading">
+            <p class="eyebrow">Official performance layer</p>
+            <h3>Season and career statistics</h3>
+            <p>Statistics load from MLB data at viewing time. Definitions should be interpreted through the official MLB glossary.</p>
+          </div>
+          <div id="statsTables" class="stats-tables"></div>
+        </section>
+
+        <section class="tab-panel" data-panel="sources" hidden>
+          <div class="panel-heading">
+            <p class="eyebrow">Evidence and provenance</p>
+            <h3>Source registry</h3>
+            <p>Every life-history claim should resolve to an original or reputable research source. Links open outside MLB Watch.</p>
+          </div>
+          <div id="sourceRegistry" class="source-registry"></div>
+        </section>
+      </div>
+    </section>
+
+    <section id="research-method" class="section-shell method-section">
+      <div class="section-heading">
+        <p class="eyebrow">How the investigation works</p>
+        <h2>One player record, several evidence layers</h2>
+        <p>
+          Baseball information is scattered across live data, official biographies, school archives, historical research,
+          transactions, media guides, and statistical databases. MLB Watch joins the layers without hiding uncertainty.
+        </p>
+      </div>
+
+      <div class="method-grid">
+        <article>
+          <span>01</span>
+          <h3>Official identity</h3>
+          <p>Name, birthplace, position, debut, handedness, draft information, and current status.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Life research</h3>
+          <p>Hometown, family context, early baseball, schooling, college, military or international development.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Career ledger</h3>
+          <p>Drafts, signings, organizations, teams, transactions, injuries, awards, milestones, and post-career work.</p>
+        </article>
+        <article>
+          <span>04</span>
+          <h3>Statistical context</h3>
+          <p>Current, season-by-season, career, postseason, advanced, and era-adjusted performance where licensing permits.</p>
+        </article>
+        <article>
+          <span>05</span>
+          <h3>Source verification</h3>
+          <p>Fact-level citations, publication date, source type, conflicts, corrections, and last review.</p>
+        </article>
+        <article>
+          <span>06</span>
+          <h3>Human review</h3>
+          <p>AI can organize evidence, but disputed biography, rights, discipline, and sensitive claims require human review.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="coverage" class="section-shell coverage-section">
+      <div class="coverage-card">
+        <div>
+          <p class="eyebrow">The full baseball system</p>
+          <h2>Players are the beginning, not the limit.</h2>
+          <p>
+            MLB Watch can expand into teams, managers, scouts, umpires, owners, broadcasters, ballparks, leagues,
+            drafts, labor history, integration, the Negro Leagues, international pipelines, rules, equipment,
+            medicine, economics, media, collectibles, and fan culture.
+          </p>
+        </div>
+        <div class="coverage-tags" aria-label="Future research areas">
+          <span>Players</span><span>Teams</span><span>Schools</span><span>Drafts</span><span>Transactions</span>
+          <span>Awards</span><span>Negro Leagues</span><span>International baseball</span><span>Labor</span>
+          <span>Ballparks</span><span>Media</span><span>Medical history</span><span>Collectibles</span><span>Rules</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>MLB Watch</strong>
+      <span>An independent StarQuest research prototype.</span>
+    </div>
+    <p>
+      Not affiliated with or endorsed by Major League Baseball. MLB names and statistical data remain subject to their owners' terms.
+      Biographical summaries are factual research with source attribution, not copied biographies.
+    </p>
+  </footer>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
